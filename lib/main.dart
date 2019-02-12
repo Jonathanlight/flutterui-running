@@ -135,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Positioned(
               top: 190.0,
-              left: (MediaQuery.of(context).size.width / 2) - 105.0,
+              left: (MediaQuery.of(context).size.width / 2) - 140.0,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
@@ -162,10 +162,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(7.0),
                         ),
-                        color: Colors.green,
+                        color: Colors.red,
                         onPressed: _showDialog,
                         child: Text(
-                          'Message',
+                          'Profil',
                           style: TextStyle(
                               fontFamily: 'Comfortaa',
                               fontWeight: FontWeight.bold,
@@ -178,7 +178,23 @@ class _MyHomePageState extends State<MyHomePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(7.0),
                         ),
-                        color: Colors.grey,
+                        color: Colors.green,
+                        onPressed: _showDialog,
+                        child: Text(
+                          'Inbox',
+                          style: TextStyle(
+                              fontFamily: 'Comfortaa',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15.0,
+                              color: Colors.white),
+                        ),
+                      ),
+                      SizedBox(width: 5.0),
+                      FlatButton(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(7.0),
+                        ),
+                        color: Colors.blue,
                         onPressed: () {},
                         child: Text(
                           'Suivre',
@@ -202,7 +218,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: double.infinity,
               decoration: BoxDecoration(
                 image: new DecorationImage(
-                  image: new AssetImage("assets/runner1.jpg"),
+                  image: new AssetImage("assets/runner7.jpg"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -211,7 +227,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   Padding(
                     padding: EdgeInsets.all(1),
-                    child: Text("Lorem ipsum"),
+                    child: Text("The Light is Everywhere",
+                      style: TextStyle(
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white
+                      ),
+                    ),
                   ),
                 ],
               )
@@ -223,7 +245,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                'Programme',
+                'Programme running',
                 style: TextStyle(
                     fontFamily: 'Comfortaa',
                     fontSize: 17.0,
