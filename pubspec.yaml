@@ -20,14 +20,14 @@ flutter:
   uses-material-design: true
 
   assets:
-   - assets/bananaberry.jpeg
-   - assets/bananabreak.jpg 
-   - assets/dumplings.jpeg
-   - assets/fruitbreak.jpeg
-   - assets/fruitpancake.jpeg
-   - assets/noodles.jpeg
-   - assets/chris.jpg
-  #  - images/a_dot_ham.jpeg 
+    - assets/chris.jpg
+    - assets/runner1.jpg
+    - assets/runner2.jpg
+    - assets/runner3.jpg
+    - assets/runner4.jpg
+    - assets/runner5.jpg
+    - assets/runner6.jpg
+    - assets/runner7.jpg
 
   fonts:
     - family: Comfortaa
